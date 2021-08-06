@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<HEAD>
+    <STYLE>
+     H1 { text-align: center}
+    </STYLE>
+   <BODY>
+    <H1> PHẦN MỀM CHẤM ĐIỂM THI </H1>
+    </BODY>
+</HEAD>
+
+<body>
+
+    <div class="sidebar">
+      <form action="/bridge" method="post" id="form1"> 
+        <button style="font-family: 'Quicksand', sans-serif; background-color: #e8e9e1; font-weight: bold;" class="button" type="submit" name="check" value="start">CHẤM ĐIỂM</button>
+      </form>
+      <form action="/bridge" method="post" id="form2"> 
+        <button style="font-family: 'Quicksand', sans-serif; background-color: #b3bb44; font-weight: bold;" class="button" type="submit" name="check" value="csv">NỘP FILE ĐÁP ÁN</button>
+      </form>
+      <form action="/bridge" method="post" id="form3"> 
+        <button style="font-family: 'Quicksand', sans-serif; background-color: #44b3bb; font-weight: bold;" class="button" type="submit" name="check" value="save">TẢI BẢNG ĐIỂM</button>
+      </form>
+    </div>
+
+
+    
+
+</body>
+
+
+
+
+
+<style>
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+    .sidebar {
+      margin: 50;
+      padding: 0;
+      width: 400px;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+    }
+     
+    .sidebar a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    
+    div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+    
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+    </style>

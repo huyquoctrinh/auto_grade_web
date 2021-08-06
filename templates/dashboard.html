@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<body>
+    <table style="width:100%">
+        <tr>
+            <th>Câu</th>
+            <th>Đáp án</th>
+            <!-- <th>Đáp án thực tế</th>  -->
+        </tr>
+
+        {% for res in lres %}
+        <tr>
+            <td></td>
+            <td>{{res}}</td>
+        </tr>
+        {%endfor%}
+<!-- 
+        {% for an in ans %}
+        <tr>
+            <td>{{an}}</td>
+        </tr>
+        {%endfor%} -->
+        <!-- <tr>res[1]</tr> -->
+    </table>
+</body>
+
+<script>
+    var i =i+1;      
+</script>
+
+<!-- <script>
+    var x ="", i;
+    for (i=0; i<=lres.length; i++) {
+      x = <td>i+1</td>
+      y = <td>lres[i]</td>
+    }
+    document.getElementById("stt").innerHTML = x;
+    document.getElementById("dapan").innerHTML = y;
+</script> -->
